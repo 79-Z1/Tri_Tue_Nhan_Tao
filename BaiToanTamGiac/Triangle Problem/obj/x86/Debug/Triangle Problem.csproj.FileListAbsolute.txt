@@ -1,0 +1,20 @@
+F:\All projects\VS\Triangle Problem\Triangle Problem\bin\Debug\Triangle Problem.exe
+F:\All projects\VS\Triangle Problem\Triangle Problem\bin\Debug\Triangle Problem.pdb
+F:\All projects\VS\Triangle Problem\Triangle Problem\obj\x86\Debug\Triangle_Problem.Form1.resources
+F:\All projects\VS\Triangle Problem\Triangle Problem\obj\x86\Debug\Triangle_Problem.Properties.Resources.resources
+F:\All projects\VS\Triangle Problem\Triangle Problem\obj\x86\Debug\Triangle Problem.csproj.GenerateResource.Cache
+F:\All projects\VS\Triangle Problem\Triangle Problem\obj\x86\Debug\Triangle Problem.exe
+F:\All projects\VS\Triangle Problem\Triangle Problem\obj\x86\Debug\Triangle Problem.pdb
+F:\All projects\VS\Triangle Problem\Triangle Problem\obj\x86\Debug\Triangle Problem.csprojResolveAssemblyReference.cache
+F:\All projects\VS\Triangle Problem\Triangle Problem\obj\x86\Debug\Triangle_Problem.frm_About.resources
+D:\DotNet_MVC\Triangle Problem\Source\Triangle Problem\Triangle Problem\bin\Debug\Triangle Problem.exe.config
+D:\DotNet_MVC\Triangle Problem\Source\Triangle Problem\Triangle Problem\bin\Debug\Triangle Problem.exe
+D:\DotNet_MVC\Triangle Problem\Source\Triangle Problem\Triangle Problem\bin\Debug\Triangle Problem.pdb
+D:\DotNet_MVC\Triangle Problem\Source\Triangle Problem\Triangle Problem\obj\x86\Debug\Triangle Problem.csproj.AssemblyReference.cache
+D:\DotNet_MVC\Triangle Problem\Source\Triangle Problem\Triangle Problem\obj\x86\Debug\Triangle Problem.csproj.SuggestedBindingRedirects.cache
+D:\DotNet_MVC\Triangle Problem\Source\Triangle Problem\Triangle Problem\obj\x86\Debug\Triangle_Problem.Form1.resources
+D:\DotNet_MVC\Triangle Problem\Source\Triangle Problem\Triangle Problem\obj\x86\Debug\Triangle_Problem.Properties.Resources.resources
+D:\DotNet_MVC\Triangle Problem\Source\Triangle Problem\Triangle Problem\obj\x86\Debug\Triangle Problem.csproj.GenerateResource.cache
+D:\DotNet_MVC\Triangle Problem\Source\Triangle Problem\Triangle Problem\obj\x86\Debug\Triangle Problem.csproj.CoreCompileInputs.cache
+D:\DotNet_MVC\Triangle Problem\Source\Triangle Problem\Triangle Problem\obj\x86\Debug\Triangle Problem.exe
+D:\DotNet_MVC\Triangle Problem\Source\Triangle Problem\Triangle Problem\obj\x86\Debug\Triangle Problem.pdb

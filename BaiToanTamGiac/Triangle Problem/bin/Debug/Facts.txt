@@ -1,0 +1,13 @@
+Begin
+A : so do goc doi dien canh a
+B : so do goc doi dien canh b
+C : so do goc doi dien canh c
+a : do dai canh a
+b : do dai canh b
+c : do dai canh c
+ha : do dai duong cao tuong ung voi canh a
+hb : do dai duong cao tuong ung voi canh b
+hc : do dai duong cao tuong ung voi canh c
+S : dien tich tam giac
+p : nua chu vi
+End.
