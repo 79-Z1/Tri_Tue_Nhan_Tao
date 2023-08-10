@@ -52,6 +52,15 @@ class TimkiemTheoChieuRong {
         dothi.themCanh(2, 4);
         dothi.themCanh(2, 5);
 
+        System.out.println("Đồ thị:");
+        for (int i = 0; i < dothi.soDinh(); i++) {
+            System.out.print(i + ": ");
+            for (int neighbor : dothi.danhSachKe(i)) {
+                System.out.print(neighbor + " ");
+            }
+            System.out.println();
+        }
+
         TimkiemTheoChieuRong timDuong = new TimkiemTheoChieuRong(dothi, 0);
         for (int i = 0; i < 6; i++) {
             Iterable<Integer> ketQua = timDuong.duongDiDen(i);

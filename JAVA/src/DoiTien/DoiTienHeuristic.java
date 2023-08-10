@@ -50,7 +50,7 @@ public class DoiTienHeuristic {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Nhập số tiền cần đổi: ");
+        System.out.print("Nhập số tiền cần đổi (phải là bội số của 10.000): ");
         int soTienCanDoi = scanner.nextInt();
         scanner.close();
 

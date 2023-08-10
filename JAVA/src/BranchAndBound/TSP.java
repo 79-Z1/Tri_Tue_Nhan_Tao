@@ -5,23 +5,17 @@ import java.util.Arrays;
 class TSP {
 
     static int N = 4;
-
-    // lưu trữ lời giải cuối cùng, tức là đường đi của người bán hàng.
     static int[] duongDiCuoiCung = new int[N + 1];
-
-    // theo dõi các đỉnh đã được thăm trong một đường đi cụ thể
     static boolean[] visited = new boolean[N];
-
-    // Lưu trữ chi phí tối thiểu cuối cùng của đoạn đường ngắn nhất.
     static int chiPhiToiThieu = Integer.MAX_VALUE;
 
-    // Hàm để sao chép lời giải tạm thời vào lời giải cuối cùng
+    static String[] cityLabels = {"A", "B", "C", "D"};
+
     static void copyToFinal(int[] curr_path) {
         if (N >= 0) System.arraycopy(curr_path, 0, duongDiCuoiCung, 0, N);
         duongDiCuoiCung[N] = curr_path[0];
     }
 
-    // Hàm tìm trọng số cạnh nhỏ nhất có đầu tại đỉnh i
     static int firstMin(int[][] maTranKe, int i) {
         int min = Integer.MAX_VALUE;
         for (int k = 0; k < N; k++)
@@ -30,7 +24,6 @@ class TSP {
         return min;
     }
 
-    // Hàm tìm trọng số cạnh nhỏ thứ hai có đầu tại đỉnh i
     static int secondMin(int[][] adj, int i) {
         int first = Integer.MAX_VALUE, second = Integer.MAX_VALUE;
         for (int j = 0; j < N; j++) {
@@ -54,6 +47,11 @@ class TSP {
                 if (tongChiPhi < chiPhiToiThieu) {
                     copyToFinal(doanDuongHienTai);
                     chiPhiToiThieu = tongChiPhi;
+                    System.out.print("Đường đi tốt hơn tìm thấy: ");
+                    for (int i = 0; i <= N; i++) {
+                        System.out.printf("%s ", cityLabels[duongDiCuoiCung[i]]);
+                    }
+                    System.out.printf(" - Chi phí: %d\n", chiPhiToiThieu);
                 }
             }
             return;
@@ -107,19 +105,31 @@ class TSP {
     // Hàm main
     public static void main(String[] args) {
         // Ma trận kề cho đồ thị cụ thể
-        int[][] maTranKe = {
-                {0, 10, 15, 20},
-                {10, 0, 35, 25},
-                {15, 35, 0, 30},
-                {20, 25, 30, 0}
+        int[][] banDo = {
+                {0, 4, 12, 7},
+                {5, 0, 0, 18},
+                {11, 0, 0, 6},
+                {10, 2, 3, 0}
         };
 
-        TSP(maTranKe);
+        System.out.println("Bản đồ:");
+        for (int i = 0; i < N; i++) {
+            for (int j = 0; j < N; j++) {
+                if (banDo[i][j] == 0) {
+                    System.out.print("# ");
+                } else {
+                    System.out.print(banDo[i][j] + " ");
+                }
+            }
+            System.out.println();
+        }
+
+        TSP(banDo);
 
         System.out.printf("Chi phí tối thiểu : %d\n", chiPhiToiThieu);
         System.out.print("Đường đi : ");
         for (int i = 0; i <= N; i++) {
-            System.out.printf("%d ", duongDiCuoiCung[i]);
+            System.out.printf("%s ", cityLabels[duongDiCuoiCung[i]]);
         }
     }
 }

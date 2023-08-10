@@ -16,12 +16,7 @@ class Nim {
 
     // Hàm để thực hiện nước đi của người chơi
     public void playerMove(int stones) {
-        if (stones >= 1 && stones <= 3) {
-            n -= stones;
-            System.out.println("(🤷‍♂️) Người chơi lấy " + stones + " viên sỏi.");
-        } else {
-            System.out.println("❌ Vui lòng chọn từ 1 đến 3 viên sỏi.");
-        }
+        n -= stones;
     }
 
     // Hàm để thực hiện nước đi của AI bằng Minimax
@@ -84,7 +79,13 @@ public class NimGame {
             System.out.println("🪨 Số lượng viên sỏi còn lại: " + game.n);
 
             System.out.print("(🤷‍♂️) Người chơi lấy bao nhiêu viên sỏi? (1-3): ");
+
             int playerMove = scanner.nextInt();
+            while(playerMove < 1 || playerMove > 3) {
+                System.out.println("❌ Vui lòng chọn từ 1 đến 3 viên sỏi.");
+                System.out.print("(🤷‍♂️) Người chơi lấy bao nhiêu viên sỏi? (1-3): ");
+                playerMove = scanner.nextInt();
+            }
             game.playerMove(playerMove);
 
             if (game.isGameOver()) {

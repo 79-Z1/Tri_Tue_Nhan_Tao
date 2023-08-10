@@ -8,13 +8,12 @@ public class EightPuzzle
     public static class Nut
     {
         Nut nutCha;
-        int[][] maTran = new int[N][N];// stores matrix
+        int[][] maTran = new int[N][N];
         int x, y;
         int soOSai;
         int soLanDiChuyen;
     }
 
-    // Hàm này dùng để in ma trận N x N đã cho.
     public static void inMaTran(int[][] maTran){
         for(int i = 0; i < N; i++){
             for(int j = 0; j < N; j++){
@@ -193,15 +192,15 @@ public class EightPuzzle
         int[][] maTranNguon =
             {
                     {1, 2, 3},
-                    {5, 6, 0},
-                    {7, 8, 4}
+                    {8, 5, 7},
+                    {6, 4, 0}
             };
 
         int[][] maTranDich =
             {
                     {1, 2, 3},
-                    {5, 8, 6},
-                    {0, 7, 4}
+                    {8, 0, 4},
+                    {7, 6, 5}
             };
 
         int x = 1, y = 2;
